@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #172140;
+    font-size: 32px;
+}
+
+/* The video game Go */
+
+.Triangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* The Rock */
+
+.getGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.RockContainerGeneral {
+    width: 150px;
+    height: 150px;
+    background-color: #D94169;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 360px;
+    left: 198px;
+}
+
+.RockContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  transform .5s; ;
+
+}
+
+.RockContainer:hover{
+    transform: scale(1.1);
+}
+
+/* The Paper  */
+
+.PaperContainerGeneral {
+
+    width: 150px;
+    height: 150px;
+    background-color: #577EF2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -90px;
+    left: -150px;
+
+}
+
+.PaperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  transform .5s; ;
+}
+
+.PaperContainer:hover{
+    transform:  scale(1.1);
+}
+
+.ScissorContainerGeneral {
+
+    width: 150px;
+    height: 150px;
+    background-color: #F2AB27;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -82px;
+    left: -35px;
+
+}
+
+.ScissorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:  transform .5s; ;
+}
+
+.ScissorContainer:hover{
+    transform: scale(1.1);
+}
+
+
+.Puntajes {
+    margin: 0 auto;
+    padding: 2rem;
+    border: 3px grey solid;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    margin: 10px auto;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.TextGame {
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    bottom: -15px;
+}
+
+.WinContainer {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+
+.refresh{
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0);
+    position: relative;
+    bottom: 25px;
+    font-weight: 800;
+}
+
+.refresh:hover{
+    transform: scale(1.1);
+}
